@@ -5,8 +5,9 @@
 ### Requirements
 
 - Java Development Kit (JDK): v17
-- Apache Maven: v3.8.6
+- Apache Maven: v3.8.8
 - MySQL: v8.0
+- XAMPP (for managing Apache and MySQL services)
 
 ### Dependencies
 
@@ -15,19 +16,7 @@
 - MySQL Connector
 - Lombok
 - Spring Boot Starter Validation
-
-### Setup
-
-1. Install JDK 17.
-2. Install Apache Maven.
-3. Install MySQL 8.0.
-4. Configure your MySQL server (username/password)
-5. Navigate to the backend directory.
-6. Ensure MySQL is running and update application.properties with your credentials. The database will be automatically created when the backend starts
-7. Run `mvn clean install` to build the project.
-8. Run `mvn spring-boot:run` to start the backend server.
-
-
+ 
 ## Frontend
 
 ### Requirements
@@ -47,8 +36,15 @@
 
 ### Setup
 
-1. Install Node.js and npm.
-2. Navigate to the frontend directory 'cd frontend'.
-3. Run `npm install` to install the dependencies.
-4. Run `npm start` to start the development server ('http://localhost:3000/').
-
+1. Install JDK 17 on your system.
+2. Install Apache Maven version 3.8+.
+3. Install MySQL 8.0 on your system.
+4. Install XAMPP.
+5. Open XAMPP Control Panel and start the Apache and MySQL services.
+6. Configure your MySQL server (username/password).
+7. Open Git Bash or your terminal, and navigate to the project folder.
+8. Ensure MySQL is running, then execute the `startproject.sh` bash script.
+    This script will automatically:
+       - Set up the database connection (database will be created automatically when the backend starts)
+       - Build the project
+       - Start the backend/frontend application  
